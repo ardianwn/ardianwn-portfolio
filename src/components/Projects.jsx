@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { FaDigitalOcean, FaGlobe, FaLaravel,  FaCalendarAlt } from 'react-icons/fa';
+import { FaBrain, FaCalendarAlt, FaDatabase, FaDigitalOcean, FaGlobe, FaLaravel } from 'react-icons/fa';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-import { SiBootstrap, SiCodeigniter, SiCpanel, SiGoogleearth, SiLeaflet, SiMysql, SiReact, SiTailwindcss, SiThreedotjs, SiVite } from 'react-icons/si';
+import { SiBootstrap, SiCodeigniter, SiCpanel, SiDocker, SiGoogleearth, SiLeaflet, SiMysql, SiNextdotjs, SiOpenai, SiPostgresql, SiPython, SiReact, SiTailwindcss, SiThreedotjs, SiVite } from 'react-icons/si';
 
 // Import different screenshots for each project using @ alias
+import DocAI from '@/assets/images/docai.png';
 import DroneSimulation from '@/assets/images/dronesimulasi.png';
 import Nawasena from '@/assets/images/nawasena.png';
 import Olivia from '@/assets/images/olivia.png';
@@ -14,6 +15,43 @@ import TravelBudget from '@/assets/images/travelbudget.png';
 import WebGis from '@/assets/images/webgis.png';
 
 const projects = [
+  {
+    title: 'DocAI – Intelligent Document Query System',
+    description: 'Internal document management and search system developed during internship to support IT operations, enabling efficient access to documents through natural language queries.',
+    tags: [
+      'Python',
+      'Next.js',
+      'LLM',
+      'Hybrid RAG',
+      'Qdrant',
+      'PostgreSQL',
+      'Docker',
+      'Ollama',
+      'OpenAI'
+    ],
+    github: 'https://github.com/ardianwn/docai',
+    live: null,
+    features: [
+      'Natural language document search',
+      'Hybrid RAG-based semantic retrieval',
+      'Vector storage using Qdrant',
+      'Structured data management with PostgreSQL',
+      'Containerized deployment with Docker',
+      'Local LLM inference using Ollama',
+      'Integration with OpenAI API'
+    ],
+    icons: [
+      <SiPython key="python" className="text-yellow-400" />,
+      <SiNextdotjs key="nextjs" className="text-black" />,
+      <SiPostgresql key="postgresql" className="text-blue-600" />,
+      <SiDocker key="docker" className="text-blue-400" />,
+      <SiOpenai key="openai" className="text-green-500" />,
+      <FaDatabase key="qdrant" className="text-purple-500" />,
+      <FaBrain key="ollama" className="text-pink-500" />
+    ],
+    image: DocAI,
+    imageAlt: 'DocAI Intelligent Document Query Dashboard'
+  },
   {
     title: 'Project Tracker',
     description: 'Fully featured Project Tracker with Github OAuth, Student Activity Chart, and admin dashboard built with Laravel Breeze and Tailwind.',

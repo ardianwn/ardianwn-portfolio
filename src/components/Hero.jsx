@@ -75,7 +75,7 @@ const Hero = ({ _darkMode }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Full Stack Web Developer
+              Full Stack Developer & AI Engineer
             </motion.h2>
             
             <motion.p 
@@ -84,7 +84,7 @@ const Hero = ({ _darkMode }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              I build exceptional digital experiences that are fast, accessible, and visually appealing. Focused on creating intuitive user interfaces with modern technologies.
+              Building intelligent applications powered by AI, from RAG systems to full-stack web solutions. Specializing in Python, TypeScript, and modern cloud technologies to create scalable, efficient digital experiences.
             </motion.p>
             
             <motion.div 

@@ -1,43 +1,72 @@
 import { motion } from 'framer-motion';
 import { FaCloud, FaDatabase, FaLaptopCode, FaServer } from 'react-icons/fa';
 import { FiAward } from 'react-icons/fi';
-import { SiCodeigniter } from 'react-icons/si';
 
 const About = ({ _darkMode }) => {
   const isDark = _darkMode;
   
   const skills = [
-    { name: 'Laravel', icon: <FaServer className="text-indigo-500" /> },
-    { name: 'CodeIgniter 4', icon: <SiCodeigniter className="text-orange-500" /> },
-    { name: 'React.js', icon: <FaLaptopCode className="text-sky-400" /> },
-    { name: 'MySQL', icon: <FaDatabase className="text-blue-600" /> },
-    { name: 'Tailwind CSS', icon: <FaLaptopCode className="text-cyan-400" /> },
-    { name: 'Git', icon: <FaCloud className="text-orange-600" /> },
-    { name: 'Virtual Private Server', icon: <FaServer className="text-orange-500" /> },
-    { name: 'DigitalOcean', icon: <FaCloud className="text-blue-400" /> },
-    { name: 'UI/UX Design', icon: <FaLaptopCode className="text-pink-500" /> },
+    { name: 'Python/FastAPI', icon: <FaServer className="text-teal-500" /> },
+    { name: 'AI & RAG Systems', icon: <FaLaptopCode className="text-purple-500" /> },
+    { name: 'Next.js/React', icon: <FaLaptopCode className="text-sky-400" /> },
+    { name: 'Docker', icon: <FaServer className="text-blue-500" /> },
+    { name: 'OpenAI API', icon: <FaCloud className="text-green-600" /> },
+    { name: 'TypeScript', icon: <FaLaptopCode className="text-blue-600" /> },
+    { name: 'Laravel/PHP', icon: <FaServer className="text-red-500" /> },
+    { name: 'PostgreSQL/MySQL', icon: <FaDatabase className="text-blue-600" /> },
+    { name: 'Cloud & VPS', icon: <FaCloud className="text-blue-400" /> },
+    { name: 'Solidity', icon: <FaLaptopCode className="text-gray-600" /> },
+    { name: 'WordPress', icon: <FaServer className="text-blue-700" /> },
+    { name: 'Git & DevOps', icon: <FaCloud className="text-orange-600" /> },
   ];
 
 const experience = [
   {
-    role: 'Assistant Lecturer',
-    company: 'Faculty of Vocational Studies, Universitas Brawijaya Malang',
-    period: 'Feb 2025 - Present',
-    description: 'Supporting academic activities and faculty projects',
+    role: 'Freelance Programmer / Full Stack Developer',
+    company: 'Self-Employed | Remote',
+    period: 'Des 2023 - Present · 2 thn 1 bln',
+    description: 'Full-stack web development and system architecture for various clients',
     achievements: [
-      'Assist with student assignment grading',
-      'Assist with preparation of faculty journal publications',
-      'Contribute to faculty projects'
+      'Project Tracker System – Built a project tracking web application with GitHub OAuth, admin dashboard, student activity analytics, data visualization using Chart.js, optimized MySQL database, and deployment on DigitalOcean VPS',
+      'Indonesia Vocational Olympiad (OLIVIA) 2025 Registration System – Developed a national-scale event registration platform with Google OAuth, real-time live chat, automated notifications, file management, and PDF/Excel export, deployed on DigitalOcean VPS',
+      'Nawasena Company Profile – Developed a multilingual (English–Japanese) company profile website with a modern responsive design and deployment on a cPanel hosting environment'
+    ]
+  },
+  {
+    role: 'ITSM Staff Intern',
+    company: 'Paiton Operation & Maintenance Indonesia',
+    period: 'Jul 2025 - Des 2025 · 6 bln',
+    description: 'IT Service Management and full-stack development at Jl. Raya Surabaya-Situbondo No.Km. 141, Paiton, Probolinggo',
+    achievements: [
+      'Developed DocAI, an Intelligent Document Query system based on Hybrid RAG, OpenAI Assistants API, Qdrant, and Ollama BGE-M3',
+      'Built a full-stack application (FastAPI & Next.js) from backend, frontend, to AI integration',
+      'Deploying DocAI to the company\'s internal server using Docker & Docker Compose',
+      'Compiling technical documentation, user manuals, and deployment guides',
+      'Creating IoT temperature and humidity sensor simulations for server room monitoring',
+      'Designing an Asset Management Handbook for standardizing IT asset management',
+      'Developing a mobile application prototype using FlutterFlow',
+      'Involvement in ITIL processes such as Incident Management, Problem Management, and Change Management'
     ]
   },
   {
     role: 'Web Developer, Internship',
     company: 'PSIK Fakultas Vokasi Universitas Brawijaya Malang',
-    period: 'Aug 2024 - Present',
+    period: 'Aug 2024 - Jul 2025',
     description: 'Website development and management for the university',
     achievements: [
-      'Manage and develop the Brawijaya University Vocational Faculty website using WordPress',
-      'Creating a PSIK Employee Management Website for Vocational Faculty using Codeigniter 4 and Bootstrap'
+      'Managed and developed the Brawijaya University Vocational Faculty website using WordPress',
+      'Created a PSIK Employee Management Website for Vocational Faculty using CodeIgniter 4 and Bootstrap'
+    ]
+  },
+  {
+    role: 'Assistant Lecturer',
+    company: 'Faculty of Vocational Studies, Universitas Brawijaya Malang',
+    period: 'Feb 2025 - Mei 2025',
+    description: 'Supporting academic activities and faculty projects',
+    achievements: [
+      'Assisted with student assignment grading and evaluation',
+      'Assisted with preparation of faculty journal publications',
+      'Contributed to various faculty projects and initiatives'
     ]
   },
   {
@@ -46,10 +75,10 @@ const experience = [
     period: 'Oct 2023 - Dec 2024',
     description: 'Technical support and digital content development',
     achievements: [
-      'Tech writing and documentation',
-      'Involved in tech support, webpages and datasheets development',
-      'Digital marketing and SEO',
-      'Content writing for online stores such as Amazon'
+      'Technical writing and documentation for various products',
+      'Provided tech support and developed webpages and datasheets',
+      'Implemented digital marketing strategies and SEO optimization',
+      'Created compelling content for online stores such as Amazon'
     ]
   }
 ];
@@ -115,13 +144,13 @@ const experience = [
                 <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg blur opacity-25"></div>
                 <div className={`relative p-6 ${isDark ? 'bg-gray-800 text-gray-300' : 'bg-white text-gray-900'} rounded-lg shadow-xl`}>
                   <p className="text-lg leading-relaxed">
-                    I'm a passionate <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Full Stack Web Developer</span> with less than 1 year of experience in building dynamic and scalable web applications. My expertise includes frontend, backend development as well as deployment, with a strong focus on creating efficient and maintainable systems.
+                    I'm a passionate <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Full Stack Developer & AI Engineer</span> specializing in building intelligent, scalable web applications. My expertise spans from AI-powered systems with RAG architecture to modern full-stack development, with a strong focus on creating efficient, maintainable, and cutting-edge solutions.
                   </p>
                 </div>
               </div>
               
               <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-gray-900'} leading-relaxed`}>
-                I specialize in modern web technologies including <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Laravel</span>, <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>CodeIgniter 4</span>, and <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>React.js</span>, with extensive experience in <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>MySQL</span> database design and optimization. I leverage <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Tailwind CSS</span> to create responsive, accessible interfaces with exceptional user experience.
+                I specialize in <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>AI/ML systems</span> using <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Python (FastAPI)</span>, <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>OpenAI API</span>, <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>RAG architecture</span>, and vector databases. For full-stack development, I excel in <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>TypeScript/Next.js</span>, <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>React.js</span>, and <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>PHP frameworks</span> (Laravel/CodeIgniter). I leverage <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Docker</span> for containerization and deploy on cloud platforms like <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>DigitalOcean VPS</span>.
               </p>
               
               <div>
@@ -131,22 +160,22 @@ const experience = [
                     <motion.div
                       key={index}
                       whileHover={{ y: -3, boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)' }}
-                      className={`flex items-center gap-2 px-4 py-3 ${isDark ? 'bg-gray-800' : 'bg-white'} rounded-lg shadow-sm hover:shadow-md transition-all duration-300`}
+                      className={`flex items-center gap-2 px-3 py-3 ${isDark ? 'bg-gray-800' : 'bg-white'} rounded-lg shadow-sm hover:shadow-md transition-all duration-300`}
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 0.2 + index * 0.1 }}
                     >
-                      <div className={`p-2 rounded-md ${isDark ? 'bg-gray-700' : 'bg-gray-100'}`}>
+                      <div className={`p-2 rounded-md flex-shrink-0 ${isDark ? 'bg-gray-700' : 'bg-gray-100'}`}>
                         {skill.icon}
                       </div>
-                      <span className={`${isDark ? 'text-gray-300' : 'text-gray-900'} font-medium`}>{skill.name}</span>
+                      <span className={`${isDark ? 'text-gray-300' : 'text-gray-900'} font-medium text-sm`}>{skill.name}</span>
                     </motion.div>
                   ))}
                 </div>
               </div>
               
               <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-gray-900'} leading-relaxed pt-4`}>
-                When I'm not coding, you can find me hiking in nature or experimenting with new cooking recipes. I believe in continuous learning and staying updated with the latest industry trends.
+                Currently expanding my expertise into <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>blockchain development</span> and <span className={`font-medium ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Solidity smart contracts</span>, exploring the future of decentralized applications. When I'm not coding, you can find me hiking in nature or experimenting with new cooking recipes. I believe in continuous learning and staying updated with the latest industry trends.
               </p>
             </motion.div>
 
@@ -190,12 +219,12 @@ const experience = [
                             {exp.achievements.map((achievement, i) => (
                               <motion.li 
                                 key={i} 
-                                className={`flex items-start gap-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-800'}`}
+                                className={`flex items-start gap-3 text-sm ${isDark ? 'text-gray-400' : 'text-gray-800'}`}
                                 whileHover={{ x: 2 }}
                                 transition={{ duration: 0.2 }}
                               >
-                                <span className="text-indigo-500 mt-1 text-lg">•</span>
-                                {achievement}
+                                <span className="text-indigo-500 mt-0.5 flex-shrink-0 font-bold">•</span>
+                                <span className="flex-1">{achievement}</span>
                               </motion.li>
                             ))}
                           </ul>

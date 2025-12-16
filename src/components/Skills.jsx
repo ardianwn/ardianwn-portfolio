@@ -1,26 +1,42 @@
 import { motion } from 'framer-motion';
-import { FaCode, FaDigitalOcean, FaGitAlt, FaLaravel, FaReact, FaServer } from 'react-icons/fa';
-import { SiCodeigniter, SiMysql, SiTailwindcss } from 'react-icons/si';
+import { FaBrain, FaChartBar, FaCode, FaDigitalOcean, FaDocker, FaGitAlt, FaLaravel, FaNodeJs, FaReact, FaRobot, FaServer, FaWordpress } from 'react-icons/fa';
+import { SiBootstrap, SiCodeigniter, SiFastapi, SiFlutter, SiMysql, SiNextdotjs, SiOpenai, SiPostgresql, SiSolidity, SiTailwindcss } from 'react-icons/si';
 
 const Skills = ({ _darkMode }) => {
   const isDark = _darkMode;
 
   const technicalSkills = [
-    { name: 'Laravel', icon: <FaLaravel className="text-red-500" />, level: 90 },
-    { name: 'CodeIgniter 4', icon: <SiCodeigniter className="text-orange-500" />, level: 85 },
+    { name: 'FastAPI', icon: <SiFastapi className="text-teal-500" />, level: 88 },
+    { name: 'Next.js', icon: <SiNextdotjs className="text-gray-900 dark:text-white" />, level: 87 },
     { name: 'React.js', icon: <FaReact className="text-blue-400" />, level: 88 },
+    { name: 'Laravel', icon: <FaLaravel className="text-red-500" />, level: 85 },
+    { name: 'CodeIgniter 4', icon: <SiCodeigniter className="text-orange-500" />, level: 85 },
+    { name: 'Node.js', icon: <FaNodeJs className="text-green-500" />, level: 82 },
+    { name: 'OpenAI API', icon: <SiOpenai className="text-green-600" />, level: 85 },
+    { name: 'RAG Systems', icon: <FaBrain className="text-purple-500" />, level: 82 },
+    { name: 'Qdrant', icon: <FaServer className="text-indigo-500" />, level: 78 },
+    { name: 'Ollama', icon: <FaRobot className="text-cyan-600" />, level: 75 },
+    { name: 'Docker', icon: <FaDocker className="text-blue-500" />, level: 82 },
     { name: 'MySQL', icon: <SiMysql className="text-blue-600" />, level: 87 },
+    { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-700" />, level: 80 },
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-400" />, level: 92 },
+    { name: 'Bootstrap', icon: <SiBootstrap className="text-purple-600" />, level: 88 },
+    { name: 'Chart.js', icon: <FaChartBar className="text-pink-500" />, level: 85 },
+    { name: 'WordPress', icon: <FaWordpress className="text-blue-700" />, level: 80 },
     { name: 'Git', icon: <FaGitAlt className="text-orange-600" />, level: 85 },
-    { name: 'VPS', icon: <FaDigitalOcean className="text-blue-400" />, level: 80 },
-    { name: 'UI/UX Design', icon: <FaCode className="text-purple-500" />, level: 83 },
+    { name: 'VPS/Cloud', icon: <FaDigitalOcean className="text-blue-400" />, level: 82 },
+    { name: 'FlutterFlow', icon: <SiFlutter className="text-blue-400" />, level: 75 },
+    { name: 'Solidity', icon: <SiSolidity className="text-gray-700 dark:text-gray-300" />, level: 70 },
   ];
 
   const languageSkills = [
-    { name: 'PHP', level: 90 },
-    { name: 'JavaScript', level: 88 },
+    { name: 'Python', level: 90 },
+    { name: 'TypeScript', level: 88 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'PHP', level: 85 },
     { name: 'HTML/CSS', level: 95 },
-    { name: 'SQL', level: 85 },
+    { name: 'SQL', level: 87 },
+    { name: 'Solidity', level: 70 },
   ];
 
   return (
@@ -208,15 +224,18 @@ const Skills = ({ _darkMode }) => {
                   Development Approach
                 </h3>
                 <p className={`${isDark ? 'text-gray-300' : 'text-gray-900'} mb-5 relative z-10`}>
-                  I specialize in building full-stack applications with <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Laravel/CodeIgniter</span> backends and <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>React.js</span> frontends, connected to <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>MySQL</span> databases.
+                  I specialize in building full-stack applications with <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>Python (FastAPI)</span> and <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>TypeScript (Next.js)</span> for modern web applications, complemented by <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>PHP (Laravel/CodeIgniter)</span> for traditional systems, with expertise in <span className={`font-semibold ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>AI/RAG integration</span> and containerized deployment.
                 </p>
                 <ul className="space-y-3 relative z-10">
                   {[
-                    'Clean, maintainable code following SOLID principles',
-                    'RESTful API development with proper documentation',
-                    'Responsive UI development with Tailwind CSS',
-                    'Database optimization and efficient queries',
-                    'Git version control and CI/CD deployment'
+                    'AI-powered systems with RAG, OpenAI API, and vector databases',
+                    'Full-stack development with Python/FastAPI and TypeScript/Next.js',
+                    'RESTful API development with comprehensive documentation',
+                    'Responsive UI with Tailwind CSS and modern frameworks',
+                    'Database design and optimization (MySQL/PostgreSQL)',
+                    'Docker containerization and cloud deployment (VPS/DigitalOcean)',
+                    'Smart contract development with Solidity',
+                    'Clean, maintainable code following SOLID principles'
                   ].map((item, i) => (
                     <motion.li 
                       key={i}

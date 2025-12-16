@@ -6,6 +6,34 @@ import { SiCisco } from 'react-icons/si';
 
 const certifications = [
   {
+    title: 'Solidity Smart Contract Development',
+    issuer: 'Cyfrin Updraft',
+    date: 'Des 2025',
+    credentialId: '7TLECF4ORK5A',
+    link: 'https://profiles.cyfrin.io/u/ardianwahyunizar614/achievements/solidity',
+    icon: <FaCode key="cyfrin" className="text-blue-400" />,
+    features: [
+      'Master Solidity fundamentals and smart contract development',
+      'Build and deploy decentralized applications (dApps) on Ethereum',
+      'Understand blockchain security best practices',
+      'Implement smart contract testing and debugging techniques'
+    ]
+  },
+  {
+    title: 'Certification: Blockchain Basics',
+    issuer: 'Cyfrin Updraft',
+    date: 'Sep 2025',
+    credentialId: 'BBCC-L7DO7IOV3JNLB',
+    link: 'https://updraft.cyfrin.io/courses/blockchain-basics/final/proficiency-exam',
+    icon: <FaCode key="cyfrin" className="text-blue-400" />,
+    features: [
+      'Understand fundamental concepts of blockchain technology',
+      'Learn about distributed ledger systems and consensus mechanisms',
+      'Explore cryptographic principles in blockchain',
+      'Introduction to smart contracts and decentralized networks'
+    ]
+  },
+  {
     title: 'Copyright Anti Jockey Assignment Application - Web-based Student Assignment Monitoring',
     issuer: 'Ministry of Law',
     date: 'Apr 16, 2025',

@@ -1,9 +1,10 @@
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { FaFileAlt, FaGithub, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import { FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
 import { HiOutlineCheckCircle, HiOutlineExclamationCircle } from 'react-icons/hi';
+import { RiTwitterXFill } from 'react-icons/ri';
 
 const Contact = ({ _darkMode }) => {
   const isDark = _darkMode;
@@ -155,7 +156,7 @@ const Contact = ({ _darkMode }) => {
                   {[
                     { name: 'Github', icon: <FaGithub className="w-5 h-5" />, url: 'https://github.com/ardianwn' },
                     { name: 'LinkedIn', icon: <FaLinkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/ardian-wahyu-nizar-034625172/' },
-                    { name: 'TikTok', icon: <FaTiktok className="w-5 h-5" />, url: 'https://www.tiktok.com/@ardian.wn' },
+                    { name: 'X', icon: <RiTwitterXFill className="w-5 h-5" />, url: 'https://x.com/ardianwn_' },
                     { name: 'Resume', icon: <FaFileAlt className="w-5 h-5" />, url: 'https://drive.google.com/file/d/1eCe8A5Eqj_Gv4FzlQMS2pGUpg-1oAfL7/view?usp=sharing' }
                   ].map((social, index) => (
                     <motion.a
