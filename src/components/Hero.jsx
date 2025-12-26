@@ -116,7 +116,7 @@ const Hero = ({ _darkMode }) => {
               </motion.a>
 
               <motion.a
-                href="https://drive.google.com/file/d/1eCe8A5Eqj_Gv4FzlQMS2pGUpg-1oAfL7/view?usp=sharing" // Replace with your actual resume path
+                href="https://drive.google.com/file/d/1VFlWrE45rqgRJ2I4I94rqOFLUpKNnCRH/view?usp=drive_link"
                 download
                 className={`flex items-center gap-2 px-6 sm:px-8 py-3.5 ${isDark ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'} rounded-lg font-medium ${isDark ? 'hover:bg-gray-700' : 'hover:bg-gray-200'} transition-colors duration-300 group`}
                 whileHover={{ scale: 1.05 }}

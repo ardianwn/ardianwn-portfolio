@@ -157,7 +157,7 @@ const Contact = ({ _darkMode }) => {
                     { name: 'Github', icon: <FaGithub className="w-5 h-5" />, url: 'https://github.com/ardianwn' },
                     { name: 'LinkedIn', icon: <FaLinkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/ardian-wahyu-nizar-034625172/' },
                     { name: 'X', icon: <RiTwitterXFill className="w-5 h-5" />, url: 'https://x.com/ardianwn_' },
-                    { name: 'Resume', icon: <FaFileAlt className="w-5 h-5" />, url: 'https://drive.google.com/file/d/1eCe8A5Eqj_Gv4FzlQMS2pGUpg-1oAfL7/view?usp=sharing' }
+                    { name: 'Resume', icon: <FaFileAlt className="w-5 h-5" />, url: 'https://drive.google.com/file/d/1VFlWrE45rqgRJ2I4I94rqOFLUpKNnCRH/view?usp=drive_link' }
                   ].map((social, index) => (
                     <motion.a
                       key={index}
